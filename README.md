@@ -10,6 +10,8 @@ Demo Project to display news headlines.
 
 4. Use command - git clone "HTTPS link copied from github account"
 
+5. Change directory to the cloned project
+
 5. Use command - pod install
 
 6. Open Workspace
