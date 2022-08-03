@@ -49,6 +49,13 @@ class HomeUIController: NSObject {
         vc?.present(alert, animated: true, completion: nil)
     }
     
+    private func openUrl(_ vc: UIViewController, title: String) {
+        let nav = UINavigationController(rootViewController: vc)
+        vc.title = title
+        nav.modalPresentationStyle = .overFullScreen
+        let window = UIApplication.shared.currentUIWindow()
+        window?.rootViewController?.present(nav, animated: true, completion: nil)
+    }
 }
 
 extension HomeUIController: UITableViewDataSource, UITableViewDelegate {
@@ -64,6 +71,7 @@ extension HomeUIController: UITableViewDataSource, UITableViewDelegate {
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         self.view?.tableView.deselectRow(at: indexPath, animated: true)
+        self.openUrl(NewsDetailsWebViewController(withURL: self.view?.newsData?.articles?[indexPath.row].url ?? ""), title: "News Details")
     }
 }
 

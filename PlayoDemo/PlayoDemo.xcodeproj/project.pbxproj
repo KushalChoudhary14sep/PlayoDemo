@@ -26,6 +26,8 @@
 		CAE72667289AD4AF00E9E1DC /* HomeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAE72665289AD4AF00E9E1DC /* HomeTableViewCell.swift */; };
 		CAE72668289AD4AF00E9E1DC /* HomeTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CAE72666289AD4AF00E9E1DC /* HomeTableViewCell.xib */; };
 		CAE7266A289AD65700E9E1DC /* Nuke + ImageDownloader.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAE72669289AD65700E9E1DC /* Nuke + ImageDownloader.swift */; };
+		CAE7266D289AD99600E9E1DC /* NewsDetailsWebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAE7266C289AD99600E9E1DC /* NewsDetailsWebViewController.swift */; };
+		CAE7266F289AD9DC00E9E1DC /* UIApplication.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAE7266E289AD9DC00E9E1DC /* UIApplication.swift */; };
 		CF666B466AFD893E92C11788 /* Pods_PlayoDemoTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C333B74538EA266CCFC0F41C /* Pods_PlayoDemoTests.framework */; };
 /* End PBXBuildFile section */
 
@@ -74,6 +76,8 @@
 		CAE72665289AD4AF00E9E1DC /* HomeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTableViewCell.swift; sourceTree = "<group>"; };
 		CAE72666289AD4AF00E9E1DC /* HomeTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeTableViewCell.xib; sourceTree = "<group>"; };
 		CAE72669289AD65700E9E1DC /* Nuke + ImageDownloader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Nuke + ImageDownloader.swift"; sourceTree = "<group>"; };
+		CAE7266C289AD99600E9E1DC /* NewsDetailsWebViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsDetailsWebViewController.swift; sourceTree = "<group>"; };
+		CAE7266E289AD9DC00E9E1DC /* UIApplication.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIApplication.swift; sourceTree = "<group>"; };
 		CC98F77FD57478FCB65E02E1 /* Pods-PlayoDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PlayoDemo.debug.xcconfig"; path = "Target Support Files/Pods-PlayoDemo/Pods-PlayoDemo.debug.xcconfig"; sourceTree = "<group>"; };
 		E6F432C09567996745A5C2B8 /* Pods_PlayoDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PlayoDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F064AE00A1E91D451636888F /* Pods-PlayoDemo-PlayoDemoUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PlayoDemo-PlayoDemoUITests.debug.xcconfig"; path = "Target Support Files/Pods-PlayoDemo-PlayoDemoUITests/Pods-PlayoDemo-PlayoDemoUITests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -204,6 +208,7 @@
 		CA9CB9AD289AD0B600DFFE52 /* Extension */ = {
 			isa = PBXGroup;
 			children = (
+				CAE7266E289AD9DC00E9E1DC /* UIApplication.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -211,6 +216,7 @@
 		CA9CB9AE289AD0C400DFFE52 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				CAE7266B289AD96700E9E1DC /* WebViewController */,
 				CAE72663289AD48000E9E1DC /* CustomeViews */,
 				CA9CB9AF289AD0EF00DFFE52 /* ViewControllers */,
 				CA9CB9B0289AD0F900DFFE52 /* StoryBoard */,
@@ -275,6 +281,14 @@
 				CAE72666289AD4AF00E9E1DC /* HomeTableViewCell.xib */,
 			);
 			path = TableViewCells;
+			sourceTree = "<group>";
+		};
+		CAE7266B289AD96700E9E1DC /* WebViewController */ = {
+			isa = PBXGroup;
+			children = (
+				CAE7266C289AD99600E9E1DC /* NewsDetailsWebViewController.swift */,
+			);
+			path = WebViewController;
 			sourceTree = "<group>";
 		};
 		FB25F81288E93AEA0F9C9511 /* Frameworks */ = {
@@ -527,6 +541,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CAE7266F289AD9DC00E9E1DC /* UIApplication.swift in Sources */,
 				CAE72658289AD2ED00E9E1DC /* HomeUIController.swift in Sources */,
 				CAE72662289AD39700E9E1DC /* NewsResponse.swift in Sources */,
 				CA9CB97F289ACDA000DFFE52 /* HomeViewController.swift in Sources */,
@@ -534,6 +549,7 @@
 				CAE72660289AD38700E9E1DC /* NewsRestManager.swift in Sources */,
 				CAE7265A289AD30C00E9E1DC /* HomeViewModel.swift in Sources */,
 				CAE72667289AD4AF00E9E1DC /* HomeTableViewCell.swift in Sources */,
+				CAE7266D289AD99600E9E1DC /* NewsDetailsWebViewController.swift in Sources */,
 				CA9CB97D289ACDA000DFFE52 /* SceneDelegate.swift in Sources */,
 				CAE7265E289AD37700E9E1DC /* NewsAPI.swift in Sources */,
 				CAE7266A289AD65700E9E1DC /* Nuke + ImageDownloader.swift in Sources */,
