@@ -1,6 +1,19 @@
 # PlayoDemo
 Demo Project to display news headlines.
 
+#Installation process
+1. Copy HTTPS link under "Code" drop down.
+
+2. Open terminal
+
+3. Change prefered directory to clone the project
+
+4. Use command - git clone "HTTPS link copied from github account"
+
+5. Use command - pod install
+
+6. Open Workspace
+
 #Tools used
 1. Xcode IDE - Used to develop the application
 
