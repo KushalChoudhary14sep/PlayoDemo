@@ -19,6 +19,7 @@ class PlayoDemoTests: XCTestCase {
     }
 
     func testExample() throws {
+        self.checkHomeDataFetched()
         // This is an example of a functional test case.
         // Use XCTAssert and related functions to verify your tests produce the correct results.
         // Any test you write for XCTest can be annotated as throws and async.
@@ -32,5 +33,22 @@ class PlayoDemoTests: XCTestCase {
             // Put the code you want to measure the time of here.
         }
     }
+    
+    func checkHomeDataFetched() {
+        let expectation = XCTestExpectation(description: "Check for api")
+        NewsRestManager.shared.getNews { result in
+            switch result{
+            case .success(let response):
+                XCTAssertTrue(response.status == "ok")
+                expectation.fulfill()
+                debugPrint("GET API Succedded")
+            case .failure(let error):
+                XCTAssertNotNil(error)
+                debugPrint("GET API Failed")
+            }
+        }
+        wait(for: [expectation], timeout: 30)
+    }
+
 
 }
