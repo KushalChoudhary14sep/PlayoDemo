@@ -11,13 +11,21 @@
 		9F1D059A4C560A6ED57B175C /* Pods_PlayoDemo_PlayoDemoUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 25C429C044BF7B28913F0269 /* Pods_PlayoDemo_PlayoDemoUITests.framework */; };
 		CA9CB97B289ACDA000DFFE52 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA9CB97A289ACDA000DFFE52 /* AppDelegate.swift */; };
 		CA9CB97D289ACDA000DFFE52 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA9CB97C289ACDA000DFFE52 /* SceneDelegate.swift */; };
-		CA9CB97F289ACDA000DFFE52 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA9CB97E289ACDA000DFFE52 /* ViewController.swift */; };
+		CA9CB97F289ACDA000DFFE52 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA9CB97E289ACDA000DFFE52 /* HomeViewController.swift */; };
 		CA9CB982289ACDA000DFFE52 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CA9CB980289ACDA000DFFE52 /* Main.storyboard */; };
 		CA9CB984289ACDA400DFFE52 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CA9CB983289ACDA400DFFE52 /* Assets.xcassets */; };
 		CA9CB987289ACDA400DFFE52 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CA9CB985289ACDA400DFFE52 /* LaunchScreen.storyboard */; };
 		CA9CB992289ACDA400DFFE52 /* PlayoDemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA9CB991289ACDA400DFFE52 /* PlayoDemoTests.swift */; };
 		CA9CB99C289ACDA400DFFE52 /* PlayoDemoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA9CB99B289ACDA400DFFE52 /* PlayoDemoUITests.swift */; };
 		CA9CB99E289ACDA400DFFE52 /* PlayoDemoUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA9CB99D289ACDA400DFFE52 /* PlayoDemoUITestsLaunchTests.swift */; };
+		CAE72658289AD2ED00E9E1DC /* HomeUIController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAE72657289AD2ED00E9E1DC /* HomeUIController.swift */; };
+		CAE7265A289AD30C00E9E1DC /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAE72659289AD30C00E9E1DC /* HomeViewModel.swift */; };
+		CAE7265E289AD37700E9E1DC /* NewsAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAE7265D289AD37700E9E1DC /* NewsAPI.swift */; };
+		CAE72660289AD38700E9E1DC /* NewsRestManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAE7265F289AD38700E9E1DC /* NewsRestManager.swift */; };
+		CAE72662289AD39700E9E1DC /* NewsResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAE72661289AD39700E9E1DC /* NewsResponse.swift */; };
+		CAE72667289AD4AF00E9E1DC /* HomeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAE72665289AD4AF00E9E1DC /* HomeTableViewCell.swift */; };
+		CAE72668289AD4AF00E9E1DC /* HomeTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CAE72666289AD4AF00E9E1DC /* HomeTableViewCell.xib */; };
+		CAE7266A289AD65700E9E1DC /* Nuke + ImageDownloader.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAE72669289AD65700E9E1DC /* Nuke + ImageDownloader.swift */; };
 		CF666B466AFD893E92C11788 /* Pods_PlayoDemoTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C333B74538EA266CCFC0F41C /* Pods_PlayoDemoTests.framework */; };
 /* End PBXBuildFile section */
 
@@ -48,7 +56,7 @@
 		CA9CB977289ACDA000DFFE52 /* PlayoDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PlayoDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CA9CB97A289ACDA000DFFE52 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CA9CB97C289ACDA000DFFE52 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		CA9CB97E289ACDA000DFFE52 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		CA9CB97E289ACDA000DFFE52 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		CA9CB981289ACDA000DFFE52 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		CA9CB983289ACDA400DFFE52 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CA9CB986289ACDA400DFFE52 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -58,6 +66,14 @@
 		CA9CB997289ACDA400DFFE52 /* PlayoDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PlayoDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CA9CB99B289ACDA400DFFE52 /* PlayoDemoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayoDemoUITests.swift; sourceTree = "<group>"; };
 		CA9CB99D289ACDA400DFFE52 /* PlayoDemoUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayoDemoUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		CAE72657289AD2ED00E9E1DC /* HomeUIController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeUIController.swift; sourceTree = "<group>"; };
+		CAE72659289AD30C00E9E1DC /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
+		CAE7265D289AD37700E9E1DC /* NewsAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsAPI.swift; sourceTree = "<group>"; };
+		CAE7265F289AD38700E9E1DC /* NewsRestManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsRestManager.swift; sourceTree = "<group>"; };
+		CAE72661289AD39700E9E1DC /* NewsResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsResponse.swift; sourceTree = "<group>"; };
+		CAE72665289AD4AF00E9E1DC /* HomeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTableViewCell.swift; sourceTree = "<group>"; };
+		CAE72666289AD4AF00E9E1DC /* HomeTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeTableViewCell.xib; sourceTree = "<group>"; };
+		CAE72669289AD65700E9E1DC /* Nuke + ImageDownloader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Nuke + ImageDownloader.swift"; sourceTree = "<group>"; };
 		CC98F77FD57478FCB65E02E1 /* Pods-PlayoDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PlayoDemo.debug.xcconfig"; path = "Target Support Files/Pods-PlayoDemo/Pods-PlayoDemo.debug.xcconfig"; sourceTree = "<group>"; };
 		E6F432C09567996745A5C2B8 /* Pods_PlayoDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PlayoDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F064AE00A1E91D451636888F /* Pods-PlayoDemo-PlayoDemoUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PlayoDemo-PlayoDemoUITests.debug.xcconfig"; path = "Target Support Files/Pods-PlayoDemo-PlayoDemoUITests/Pods-PlayoDemo-PlayoDemoUITests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -101,7 +117,6 @@
 				B8406099F0B658AF0166B9C4 /* Pods-PlayoDemoTests.debug.xcconfig */,
 				7DC41AC83C8F8595BA264841 /* Pods-PlayoDemoTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -130,10 +145,13 @@
 		CA9CB979289ACDA000DFFE52 /* PlayoDemo */ = {
 			isa = PBXGroup;
 			children = (
+				CA9CB9AD289AD0B600DFFE52 /* Extension */,
+				CA9CB9AC289AD0AB00DFFE52 /* Helper */,
+				CA9CB9AA289AD09300DFFE52 /* Model */,
+				CA9CB9AB289AD0A200DFFE52 /* Networking */,
+				CA9CB9AE289AD0C400DFFE52 /* View */,
 				CA9CB97A289ACDA000DFFE52 /* AppDelegate.swift */,
 				CA9CB97C289ACDA000DFFE52 /* SceneDelegate.swift */,
-				CA9CB97E289ACDA000DFFE52 /* ViewController.swift */,
-				CA9CB980289ACDA000DFFE52 /* Main.storyboard */,
 				CA9CB983289ACDA400DFFE52 /* Assets.xcassets */,
 				CA9CB985289ACDA400DFFE52 /* LaunchScreen.storyboard */,
 				CA9CB988289ACDA400DFFE52 /* Info.plist */,
@@ -156,6 +174,107 @@
 				CA9CB99D289ACDA400DFFE52 /* PlayoDemoUITestsLaunchTests.swift */,
 			);
 			path = PlayoDemoUITests;
+			sourceTree = "<group>";
+		};
+		CA9CB9AA289AD09300DFFE52 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				CAE72661289AD39700E9E1DC /* NewsResponse.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		CA9CB9AB289AD0A200DFFE52 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				CAE7265B289AD35A00E9E1DC /* API Provider */,
+				CAE7265C289AD36400E9E1DC /* NewsRestManager */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		CA9CB9AC289AD0AB00DFFE52 /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				CAE72669289AD65700E9E1DC /* Nuke + ImageDownloader.swift */,
+			);
+			path = Helper;
+			sourceTree = "<group>";
+		};
+		CA9CB9AD289AD0B600DFFE52 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		CA9CB9AE289AD0C400DFFE52 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				CAE72663289AD48000E9E1DC /* CustomeViews */,
+				CA9CB9AF289AD0EF00DFFE52 /* ViewControllers */,
+				CA9CB9B0289AD0F900DFFE52 /* StoryBoard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		CA9CB9AF289AD0EF00DFFE52 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				CA9CB9B1289AD12800DFFE52 /* Home */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		CA9CB9B0289AD0F900DFFE52 /* StoryBoard */ = {
+			isa = PBXGroup;
+			children = (
+				CA9CB980289ACDA000DFFE52 /* Main.storyboard */,
+			);
+			path = StoryBoard;
+			sourceTree = "<group>";
+		};
+		CA9CB9B1289AD12800DFFE52 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				CA9CB97E289ACDA000DFFE52 /* HomeViewController.swift */,
+				CAE72657289AD2ED00E9E1DC /* HomeUIController.swift */,
+				CAE72659289AD30C00E9E1DC /* HomeViewModel.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		CAE7265B289AD35A00E9E1DC /* API Provider */ = {
+			isa = PBXGroup;
+			children = (
+				CAE7265D289AD37700E9E1DC /* NewsAPI.swift */,
+			);
+			path = "API Provider";
+			sourceTree = "<group>";
+		};
+		CAE7265C289AD36400E9E1DC /* NewsRestManager */ = {
+			isa = PBXGroup;
+			children = (
+				CAE7265F289AD38700E9E1DC /* NewsRestManager.swift */,
+			);
+			path = NewsRestManager;
+			sourceTree = "<group>";
+		};
+		CAE72663289AD48000E9E1DC /* CustomeViews */ = {
+			isa = PBXGroup;
+			children = (
+				CAE72664289AD48900E9E1DC /* TableViewCells */,
+			);
+			path = CustomeViews;
+			sourceTree = "<group>";
+		};
+		CAE72664289AD48900E9E1DC /* TableViewCells */ = {
+			isa = PBXGroup;
+			children = (
+				CAE72665289AD4AF00E9E1DC /* HomeTableViewCell.swift */,
+				CAE72666289AD4AF00E9E1DC /* HomeTableViewCell.xib */,
+			);
+			path = TableViewCells;
 			sourceTree = "<group>";
 		};
 		FB25F81288E93AEA0F9C9511 /* Frameworks */ = {
@@ -279,6 +398,7 @@
 			files = (
 				CA9CB987289ACDA400DFFE52 /* LaunchScreen.storyboard in Resources */,
 				CA9CB984289ACDA400DFFE52 /* Assets.xcassets in Resources */,
+				CAE72668289AD4AF00E9E1DC /* HomeTableViewCell.xib in Resources */,
 				CA9CB982289ACDA000DFFE52 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -407,9 +527,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CA9CB97F289ACDA000DFFE52 /* ViewController.swift in Sources */,
+				CAE72658289AD2ED00E9E1DC /* HomeUIController.swift in Sources */,
+				CAE72662289AD39700E9E1DC /* NewsResponse.swift in Sources */,
+				CA9CB97F289ACDA000DFFE52 /* HomeViewController.swift in Sources */,
 				CA9CB97B289ACDA000DFFE52 /* AppDelegate.swift in Sources */,
+				CAE72660289AD38700E9E1DC /* NewsRestManager.swift in Sources */,
+				CAE7265A289AD30C00E9E1DC /* HomeViewModel.swift in Sources */,
+				CAE72667289AD4AF00E9E1DC /* HomeTableViewCell.swift in Sources */,
 				CA9CB97D289ACDA000DFFE52 /* SceneDelegate.swift in Sources */,
+				CAE7265E289AD37700E9E1DC /* NewsAPI.swift in Sources */,
+				CAE7266A289AD65700E9E1DC /* Nuke + ImageDownloader.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
